@@ -49,8 +49,48 @@ import os, sys
 
 
 class Solution:
-    def myAtoi(self, str: str) -> int:
-        pass
+    def myAtoi(self, s: str) -> int:
+
+        import math
+        INT_MAX = int(math.pow(2,31) - 1)
+        INT_MIN = int(math.pow(-2,31))
+
+        s = s.strip()
+        num_s = '+-0123456789'
+        if s == '' or s == '-' or s == '+':
+            return 0
+        if s[0] not in num_s:
+            return 0
+
+        result = ''
+        if s[0] == '-' or s[0] == '+':
+            result += s[0]
+            s = s[1:]
+            for i in s:
+                if i in num_s[2:]:
+                    result += i
+        else:
+            for i in s:
+                if i in num_s[2:]:
+                    result += i
+
+        result = result.split('.')[0]
+
+        if result == '+' or result == '-':
+            return 0
+        if int(result) >= INT_MAX:
+            return INT_MAX
+        if int(result) <= INT_MIN:
+            return INT_MIN
+        else:
+            return int(result)
+
+result = Solution()
+#s = "4193 with words"
+#s = "   -42"
+#s = "3.14159"
+s = "3.14159"
+print(result.myAtoi(s))
 
 
 
