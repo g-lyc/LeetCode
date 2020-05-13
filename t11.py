@@ -12,17 +12,16 @@ import os, sys
 # 解法1 双端指针
 class Solution:
     def maxArea(self, height) -> int:
-        l = 0
-        r = len(height) - 1
-        contain = 0
-        while l < r:
-            contain = max(contain, (r - l) * min(height[l], height[r]))
-            if height[l] > height[r]:
-                r -= 1
+        l_pointer, r_pointer = 0, len(height) - 1
+        max_area = 0
+        while l_pointer < r_pointer:
+            max_area = max(max_area, (r_pointer - l_pointer) * min(height[l_pointer], height[r_pointer]))
+            if height[l_pointer] > height[r_pointer]:
+                r_pointer -= 1
             else:
-                l += 1
+                l_pointer += 1
 
-        return contain
+        return max_area
 
 # 解法2 暴力穷举（时间会超出限制）
 class Solution:
