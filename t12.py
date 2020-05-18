@@ -52,6 +52,11 @@ import os, sys
 # 穷举列表法
 class Solution(object):
     def intToRoman(self, num):
+        """
+        遍历列表方式查找
+        :param num:
+        :return:
+        """
         if num > 3999 or num < 1:
             return 0
         # 倒序遍历
