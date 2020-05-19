@@ -79,9 +79,17 @@ int main()
     vector<vector<int>> res = model.threeSum(x);
 
     // 遍历打印返回结果vector
-    for(int i=0;i<res.size();i++){
-        for(int j=0;j<res[i].size();j++){
-            cout << res[i][j] << "\t";
+    // for(int i=0;i<res.size();i++){
+    //     for(int j=0;j<res[i].size();j++){
+    //         cout << res[i][j] << "\t";
+    //     };
+    //     cout << endl;
+    // }
+
+    // C++ 11版本自动遍历vector方法
+    for(auto i:res){
+        for(auto j:i){
+            cout << j << "\t";
         };
         cout << endl;
     }
