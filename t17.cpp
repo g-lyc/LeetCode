@@ -12,6 +12,7 @@ using namespace std;
  *  Author:lyc
 */
 
+// 解法一：递归
 class Solution {
 public:
     vector<string> letterCombinations(string digits) 
@@ -68,6 +69,55 @@ public:
         return result;
     };
 };
+
+
+// 解法二：快速递归
+class Solution {
+public:
+    vector<string> letterCombinations(string digits) 
+    {
+
+        // 定义电话键盘对应map
+        map<char,vector<string>> str_dic = {
+                {'2',{"a","b","c"}},
+                {'3',{"d","e","f"}},
+                {'4',{"g","h","i"}},
+                {'5',{"j","k","l"}},
+                {'6',{"m","n","o"}},
+                {'7',{"p","q","r","s"}},
+                {'8',{"t","u","v"}},
+                {'9',{"w","x","y","z"}}
+        };
+        
+        // 声明结果vector
+        vector<string> result;
+
+        // 判断输入字符为空时直接返回空vector
+        if(digits.size() < 1)
+        {
+            return result;
+        }
+        else if(digits.size() == 1)
+        {
+            return str_dic[digits[0]];
+        }
+        else
+        {
+            vector<string> res = letterCombinations(digits.substr(0,digits.size()-1));
+            for(auto i:res)
+            {
+                for(auto j:str_dic[digits.back()])
+                {
+                    result.push_back(i+j);
+                }
+            }
+        }
+        return result;
+    };
+};
+
+
+
 
 int main()
 {
