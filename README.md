@@ -1,14 +1,14 @@
-Leetcode Solution
-=================
-
 ### Leetcode coding record. All questions come from [leetcode](https://leetcode-cn.com).
 
-### Folder:
+### Folder Usage:
 
-#### Algorithm - Commonly used algorithms.
-#### Python - Solution of python.
-#### C++ - Solution of C++.
+#### Algorithm ： Commonly used algorithms.
+#### Python ： Solution of python.
+#### C++ ： Solution of C++.
+(Tip : All scripts are included in the following tables. )
 
+Leetcode Solution
+=================
 
 | ID | Description | Script Prefix | Language |
 |---| ----- | -------- | -------- |
@@ -31,3 +31,15 @@ Leetcode Solution
 |17| 电话号码的字母组合 | t17 | [python](./Python/t17.py),[C++](./C++/t17.cpp)|
 |18| 四数之和 | t18 | [python](./Python/t18.py),[C++](./C++/t18.cpp)|
 
+
+Commonly Used Algorithms.
+=========================
+
+| ID | Description | Script Prefix | Language |
+|---| ----- | -------- | -------- |
+|1| 冒泡排序 | bubble_sort | [python](./Algorithm/bubble_sort.py)|
+|2| 插入排序 | insert_sort | [python](./Algorithm/insert_sort.py)|
+|3| 归并排序 | merge_sort | [python](./Algorithm/merge_sort.py)|
+|4| 快速排序 | quick_sort | [python](./Algorithm/quick_sort.py)|
+|5| 选择排序 | select_sort | [python](./Algorithm/select_sort.py)|
+|6| 希尔排序 | shell_sort | [python](./Algorithm/shell_sort.py)|
