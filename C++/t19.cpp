@@ -14,6 +14,7 @@ using namespace std;
 struct ListNode {
     int val;
     ListNode *next;
+    // 结构体的构造函数，初始化变量
     ListNode(int x) : val(x), next(NULL) {}
 };
 
