@@ -4,8 +4,13 @@
 using namespace std;
 
 /**
- * Definition for singly-linked list.
+ *  leetcode第19题
+ *  利用双指针移动步长差求解
+ *  Author:lyc
 */
+
+
+// Definition for singly-linked list.
 struct ListNode {
     int val;
     ListNode *next;
