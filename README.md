@@ -31,6 +31,7 @@ Leetcode Solution
 |17| 电话号码的字母组合 | t17 | [python](./Python/t17.py),[C++](./C++/t17.cpp)|
 |18| 四数之和 | t18 | [python](./Python/t18.py),[C++](./C++/t18.cpp)|
 |19| 删除链表的倒数第N个节点 | t19 | [python](./Python/t19.py),[C++](./C++/t19.cpp)|
+|20| 有效的括号 | t20 | [python](./Python/t20.py),[C++](./C++/t20.cpp)|
 
 
 Commonly Used Algorithms.
