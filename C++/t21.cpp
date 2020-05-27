@@ -25,7 +25,7 @@ public:
         // 创建一个保护节点，不用对边界进行特殊处理
         ListNode* newNode = new ListNode(0);
 
-        // 创建一个节点用于返回
+        // 创建一个头节点用于返回
         ListNode* result = newNode;
 
         while (l1 != NULL & l2 != NULL)
@@ -62,9 +62,6 @@ public:
 
 int main()
 {
-    /**
-     * 利用定义好的链表结构体创建一个链表
-    */
 
     // 创建第一个节点
     ListNode* node1 = new ListNode(1);
@@ -84,7 +81,7 @@ int main()
 
     ListNode *res = result.mergeTwoLists(node1,node4);
 
-    // 循环打印删除对应元素之后的链表
+    // 循环打印合并元素之后的链表
     while(res != NULL)
     {
         cout << res->val << endl;
