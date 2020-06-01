@@ -33,7 +33,7 @@ Leetcode Solution
 |19| 删除链表的倒数第N个节点 | t19 | [python](./Python/t19.py),[C++](./C++/t19.cpp)|
 |20| 有效的括号 | t20 | [python](./Python/t20.py),[C++](./C++/t20.cpp)|
 |21| 合并两个有序链表 | t21 | [python](./Python/t21.py),[C++](./C++/t21.cpp)|
-|22| 括号生成 | t22 | [python](./Python/t22.py),[C++](./C++/t22.cpp)|
+|22| 括号生成 | t22 | [python](./Python/t22.py)|
 
 
 Commonly Used Algorithms.
