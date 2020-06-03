@@ -69,6 +69,45 @@ class Solution:
             head = head.next
         return nodeValue
 
+
+class Solution:
+    def mergeKLists(self, lists: [ListNode]) -> ListNode:
+        """
+        官网解法，使用基于堆的优先级队列
+        :param lists:
+        :return:
+        """
+        import heapq
+        dummy = ListNode(0)
+        p = dummy
+        head = []
+        for i in range(len(lists)):
+            if lists[i] :
+                heapq.heappush(head, (lists[i].val, i))
+                lists[i] = lists[i].next
+        while head:
+            val, idx = heapq.heappop(head)
+            p.next = ListNode(val)
+            p = p.next
+            if lists[idx]:
+                heapq.heappush(head, (lists[idx].val, idx))
+                lists[idx] = lists[idx].next
+        return dummy.next
+
+    def showNode(self, node : ListNode) -> list:
+        """
+        show all value of ListNode
+        :param node:
+        :return:
+        """
+        nodeValue = []
+        head = node
+        while head:
+            nodeValue.append(head.val)
+            head = head.next
+        return nodeValue
+
+
 # 创建三个测试链表
 node1 = ListNode(1)
 node1.next = ListNode(4)
