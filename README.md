@@ -4,6 +4,7 @@
 
 #### Algorithm ： Commonly used algorithms.
 #### Python ： Solution of python.
+#### Java ： Solution of java.
 #### C++ ： Solution of C++.
 (Tip : All scripts are included in the following tables. )
 
@@ -34,7 +35,7 @@ Leetcode Solution
 |20| 有效的括号 | t20 | [python](./Python/t20.py),[C++](./C++/t20.cpp)|
 |21| 合并两个有序链表 | t21 | [python](./Python/t21.py),[C++](./C++/t21.cpp)|
 |22| 括号生成 | t22 | [python](./Python/t22.py)|
-|23| 合成K个排序链表 | t23 | [python](./Python/t23.py)|
+|23| 合成K个排序链表 | t23 | [python](./Python/t23.py),[Java](./Java/t23.java)|
 
 
 Commonly Used Algorithms.
