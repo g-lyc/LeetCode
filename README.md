@@ -36,6 +36,7 @@ Leetcode Solution
 |21| 合并两个有序链表 | t21 | [python](./Python/t21.py),[C++](./C++/t21.cpp)|
 |22| 括号生成 | t22 | [python](./Python/t22.py)|
 |23| 合成K个排序链表 | t23 | [python](./Python/t23.py),[Java](./Java/t23.java)|
+|24| 两两交换链表中的节点   | t24 | [python](./Python/t24.py),[Java](./Java/t24.java)|
 
 
 Commonly Used Algorithms.
