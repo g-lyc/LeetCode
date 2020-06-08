@@ -36,45 +36,51 @@ class Solution:
         result.next = head
 
         # 创建两个指针
-        first,second = result,result
+        pre,end = result,result
 
-        while second:
-            # first指针先跑k步，如果不够k步直接返回
+        while end:
+            # end指针先跑k步，如果不够k步直接返回
             for i in range(k):
-                first = first.next
-                if not first:
+                end = end.next
+                if not end:
                     return result.next
 
+            # 截取k长度子链表，保留首尾节点
+            startNode = pre.next
+            endNode = end.next
+            end.next = None
 
-            cur = second.next
-            for i in range(k):
-                x = cur.next
-                cur.next = x.next
-                x.next = second.next
-                second.next = x
+            # 截取的子链表反转，返回的结果中startNode节点已经到了第k个位置
+            pre.next = self.reverse(startNode)
 
-            second = cur
-            first = second
+            # 将原来截取剩余的两边添加至尾部
+            startNode.next = endNode
 
+            # 更新pre和end节点的位置，进行下一轮迭代
+            pre = startNode
+            end = pre
 
         return result.next
 
     def reverse(self, head):
-
+        """
+        反转链表
+        :param head:
+        :return:
+        """
         pre = None
         pnext = None
         while head:
+            # 截取当前节点之后的链表
             pnext = head.next
+            # 将当前节点的下个节点设置为pre链表
             head.next = pre
+            # pre赋值为当前节点
             pre = head
+            # head赋值为当前节点的下一个节点，用于迭代
             head = pnext
 
         return pre
-
-
-
-
-
 
 
     def showNode(self, node : ListNode) -> list:
