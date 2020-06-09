@@ -33,23 +33,19 @@ import os, sys
 class Solution:
     def removeDuplicates(self, nums: [int]) -> int:
 
-        count = 1
         numsOflens = len(nums)
-        nums.append('aaa')
 
-        s = 0
+        # 定义不重复元素的标志位，初始默认为第一个元素
+        flag = 0
 
-        for i in range(1,numsOflens-1):
-            if nums[i] != nums[s]:
-                count += 1
-                s += 1
-            elif nums[s] == nums[i] and nums[i] == nums[i+1]:
-                continue
-            else:
-                nums[s] = nums[i]
-                s += 1
+        # 从列表第二个元素开始遍历
+        for i in range(1,numsOflens):
+            # 如果当前元素与标志位元素不相等，标志位往后移动一位，并且将当前元素赋值给该标志位
+            if nums[i] != nums[flag]:
+                flag += 1
+                nums[flag] = nums[i]
 
-        return nums
+        return flag+1
 
 
 result = Solution()
