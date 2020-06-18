@@ -42,7 +42,7 @@ Leetcode Solution
 |27| 移除元素   | t27 | [python](./Python/t27.py),[Java](./Java/t27.java)|
 |28| 实现strStr()   | t28 | [python](./Python/t28.py),[Java](./Java/t28.java)|
 |29| 两数相除   | t29 | [python](./Python/t29.py),[Java](./Java/t29.java)|
-|35| 搜索插入位置   | t35 | [python](./Python/t35.py),[go](./go/t35.go)|
+|35| 搜索插入位置   | t35 | [python](./Python/t35.py),[go](./go/t35)|
 
 
 Commonly Used Algorithms.
