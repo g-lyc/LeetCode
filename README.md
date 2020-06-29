@@ -45,6 +45,7 @@ Leetcode Solution
 |29| 两数相除   | t29 | [python](./Python/t29.py),[Java](./Java/t29.java)|
 |35| 搜索插入位置   | t35 | [python](./Python/t35.py),[go](./Go/t35.go)|
 |38| 外观数列   | t38 | [python](./Python/t38.py),[go](./Go/t38.go)|
+|53| 最大子序和   | t53 | [python](./Python/t53.py),[go](./Go/t53.go)|
 
 
 Commonly Used Algorithms.
