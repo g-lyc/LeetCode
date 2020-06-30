@@ -46,6 +46,7 @@ Leetcode Solution
 |35| 搜索插入位置   | t35 | [python](./Python/t35.py),[go](./Go/t35.go)|
 |38| 外观数列   | t38 | [python](./Python/t38.py),[go](./Go/t38.go)|
 |53| 最大子序和   | t53 | [python](./Python/t53.py),[go](./Go/t53.go)|
+|58| 最后一个单词的长度   | t58 | [python](./Python/t58.py),[go](./Go/t58.go)|
 
 
 Commonly Used Algorithms.
