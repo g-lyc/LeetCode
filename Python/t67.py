@@ -22,23 +22,32 @@ import os, sys
 class Solution:
     def addBinary(self, a: str, b: str) -> str:
 
-        a,b = a[::-1],b[::-1]
-        short,large = b,a if len(a) > len(b) else a,b
-        result = []
-        r = 0
-        for i in range(len(short)):
-            if a[i] + b[i] + r == 2:
-                result.append(0)
-                r = 1
-            else:
-                result.append(a[i] + b[i] + r)
-                r = 0
+        # 补齐短的字符串
+        while len(a) > len(b):
+            b = '0'+b
+        while len(b) > len(a):
+            a = '0'+a
 
-        for i in range(len(short),len(large))
+        result = [0]*len(a)
+        r = 0
+
+        # 反向遍历
+        for i in range(len(a)-1,-1,-1):
+            sum = int(a[i])+int(b[i])+r
+            if sum >= 2:
+                r = 1
+                result[i] = sum - 2
+            else:
+                r = 0
+                result[i] = sum
+
+        result = ''.join([str(i) for i in result])
+
+        return '1'+result if r != 0 else result
 
 result = Solution()
-a = "1010"
-b = "1011"
+a = "1111"
+b = "1111"
 print(result.addBinary(a,b))
 
 
