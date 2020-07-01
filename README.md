@@ -49,6 +49,7 @@ Leetcode Solution
 |58| 最后一个单词的长度   | t58 | [python](./Python/t58.py),[go](./Go/t58.go)|
 |66| 加一   | t66 | [python](./Python/t66.py)|
 |67| 二进制求和   | t67 | [python](./Python/t67.py)|
+|69| x的平方根   | t69 | [python](./Python/t69.py)|
 
 
 Commonly Used Algorithms.
