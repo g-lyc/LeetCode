@@ -47,7 +47,8 @@ Leetcode Solution
 |38| 外观数列   | t38 | [python](./Python/t38.py),[go](./Go/t38.go)|
 |53| 最大子序和   | t53 | [python](./Python/t53.py),[go](./Go/t53.go)|
 |58| 最后一个单词的长度   | t58 | [python](./Python/t58.py),[go](./Go/t58.go)|
-|66| 加一   | t66 | [python](./Python/t66.py),[go](./Go/t66.go)|
+|66| 加一   | t66 | [python](./Python/t66.py)|
+|67| 二进制求和   | t67 | [python](./Python/t67.py)|
 
 
 Commonly Used Algorithms.
