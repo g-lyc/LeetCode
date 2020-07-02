@@ -19,18 +19,44 @@ import os, sys
 
 class Solution:
     def mySqrt(self, x: int) -> int:
+        """
+        暴力解法
+        :param x:
+        :return:
+        """
         if x == 0: return 0
 
         result = 0
+        # 先每次平方增长
         for i in range(1,x+2):
             result = i*2
             if pow(result,2) > x:
                 break
 
+        # 一旦超过，每次减一迭代
         while pow(result,2) > x:
             result -= 1
 
         return result
+
+
+class Solution:
+    def mySqrt(self, x: int) -> int:
+        """
+        二分法
+        :param x:
+        :return:
+        """
+        l,r,res = 0,x,-1
+        while l <= r:
+            mid = (l+r) // 2
+            if pow(mid,2) <= x:
+                res = mid
+                l = mid + 1
+            else:
+                r = mid - 1
+        return res
+
 
 result = Solution()
 n = 8
