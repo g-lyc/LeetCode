@@ -58,6 +58,23 @@ class Solution:
         return res
 
 
+class Solution:
+    def mySqrt(self, x: int) -> int:
+        """
+        牛顿迭代法
+        :param x:
+        :return:
+        """
+        if x == 0:return 0
+        C, res = float(x),float(x)
+        while True:
+            tmp = 0.5*(res + C/res)
+            if res - tmp < 0.00000001:
+                break
+            res = tmp
+        return int(res)
+
+
 result = Solution()
 n = 8
 print(result.mySqrt(n))
