@@ -50,6 +50,7 @@ Leetcode Solution
 |66| 加一   | t66 | [python](./Python/t66.py)|
 |67| 二进制求和   | t67 | [python](./Python/t67.py)|
 |69| x的平方根   | t69 | [python](./Python/t69.py)|
+|70| 爬楼梯   | t70 | [python](./Python/t70.py)|
 
 
 Commonly Used Algorithms.
