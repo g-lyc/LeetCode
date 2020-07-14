@@ -51,6 +51,7 @@ Leetcode Solution
 |67| 二进制求和   | t67 | [python](./Python/t67.py)|
 |69| x的平方根   | t69 | [python](./Python/t69.py)|
 |70| 爬楼梯   | t70 | [python](./Python/t70.py)|
+|83| 删除排序链表中的重复元素   | t83 | [python](./Python/t83.py)|
 |88| 合并两个有序数组   | t88 | [python](./Python/t88.py)|
 
 
