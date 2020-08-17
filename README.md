@@ -43,6 +43,7 @@ Leetcode Solution
 |27| 移除元素   | t27 | [python](./Python/t27.py),[Java](./Java/t27.java)|
 |28| 实现strStr()   | t28 | [python](./Python/t28.py),[Java](./Java/t28.java)|
 |29| 两数相除   | t29 | [python](./Python/t29.py),[Java](./Java/t29.java)|
+|31| 下一个排列   | t31 | [python](./Python/t31.py)|
 |35| 搜索插入位置   | t35 | [python](./Python/t35.py),[go](./Go/t35.go)|
 |38| 外观数列   | t38 | [python](./Python/t38.py),[go](./Go/t38.go)|
 |53| 最大子序和   | t53 | [python](./Python/t53.py),[go](./Go/t53.go)|
