@@ -67,3 +67,4 @@ Commonly Used Algorithms.
 |4| 快速排序 | quick_sort | [python](./Algorithm/quick_sort.py)|
 |5| 选择排序 | select_sort | [python](./Algorithm/select_sort.py)|
 |6| 希尔排序 | shell_sort | [python](./Algorithm/shell_sort.py)|
+|7| 回溯算法 | backtrack | [python](./Algorithm/backtrack_template.py)|
