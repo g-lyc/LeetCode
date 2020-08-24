@@ -56,6 +56,7 @@ Leetcode Solution
 |70| 爬楼梯   | t70 | [python](./Python/t70.py)|
 |83| 删除排序链表中的重复元素   | t83 | [python](./Python/t83.py)|
 |88| 合并两个有序数组   | t88 | [python](./Python/t88.py)|
+|100| 相同的树   | t100 | [python](./Python/t100.py),[Java](./Java/t100.java)|
 
 
 Commonly Used Algorithms.
