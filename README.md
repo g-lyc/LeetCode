@@ -45,6 +45,7 @@ Leetcode Solution
 |29| 两数相除   | t29 | [python](./Python/t29.py),[Java](./Java/t29.java)|
 |31| 下一个排列   | t31 | [python](./Python/t31.py)|
 |33| 搜索旋转排序数组   | t33 | [Java](./Java/t33.java)|
+|34| 在排序数组中查找元素的第一个和最后一个位置   | t34 | [Java](./Java/t34.java)|
 |35| 搜索插入位置   | t35 | [python](./Python/t35.py),[go](./Go/t35.go)|
 |38| 外观数列   | t38 | [python](./Python/t38.py),[go](./Go/t38.go)|
 |51| N皇后   | t51 | [python](./Python/t51.py)|
